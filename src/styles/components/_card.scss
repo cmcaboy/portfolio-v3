@@ -1,0 +1,92 @@
+.card-item {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: $xxs-size;
+    padding: $xxs-size;
+    border-radius: 4px;
+    cursor:pointer;
+}
+
+.card-item:hover {
+    // add border
+    background-color: $dark-blue;
+    color: #fff;
+}
+
+.card-photo {
+    width: 200px;
+    height: 150px;
+    border-radius: 2px;
+}
+
+.card-label {
+    font-size: 14;
+    font-weight: 600;
+}
+
+.card-modal {
+    color: $dark-blue;
+    padding-left: 10px;
+}
+
+ .education-container,.job-container {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+}
+
+// .work-subcontainer {
+//     display:flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+// }
+
+.ReactModal__Content {
+    opacity: 0;
+  }
+  
+.ReactModal__Content--after-open {
+    opacity: 1;
+    transition: opacity 800ms;
+}
+
+
+.ReactModal__Content--before-close {
+    opacity: 0;
+}
+
+.modalHeading {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.modalSubheading {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.role-heading {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.role-content {
+    font-size: 12px;
+}
+
+.resp-list {
+    padding: 0;
+    margin: 0;
+    //list-style-type: none;
+}
+
+// .loader-style {
+//     position: absolute;
+//     top: 30%;
+//     left: 50%;
+//     //margin-top: -50px;
+//     //margin-left: -50px;
+// }

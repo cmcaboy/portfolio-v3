@@ -1,0 +1,78 @@
+.feature-gif {
+    height: 300px;
+    width: 150px;
+    margin: $xxs-size $s-size;
+}
+
+.feature-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.feature-gif-container {
+    margin-top: $m-size;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.feature-gif-caption {
+    font-style: italic;
+    font-size: 11px;
+    opacity: 0.70
+}
+
+.feature-gif-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.feature-button {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    //font-size: 30px;
+    border-radius: 5px;
+    margin: $l-size 0;
+    //border: 2px solid #4078c0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: auto;
+    padding: 0 $xs-size;
+
+}
+
+.github-icon {
+    padding: 0 0 $xs-size 0;
+    //border-right: 2px solid #767676;
+    //order-right-color: #fff;
+    font-size: 28px;
+    opacity: 0.5;
+}
+
+.github-label {
+    font-weight: 400;
+    text-align: center;
+    font-size: 22px;
+    margin-left: $xs-size;
+    //font-family: Arial, Helvetica, sans-serif;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    opacity: 0.9;
+}
+
+.feature-button:hover {
+    cursor: pointer;
+    background-color: orange;
+}
+
+

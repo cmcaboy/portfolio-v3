@@ -1,0 +1,11 @@
+.content-container {
+    margin: $s-size 0 0 $xxl-size;
+    padding: 0 $s-size;
+    color: $dark-blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+

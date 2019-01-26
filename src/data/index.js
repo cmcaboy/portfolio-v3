@@ -22,7 +22,7 @@ export const projects = [
     label: "Stagg",
     category: "Business",
     img: "images/stagg.jpg",
-    link: "featured",
+    link: "stagg",
     type: "link",
     modalDisplay: false,
     visible: true

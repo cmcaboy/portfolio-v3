@@ -26,6 +26,7 @@ const AppRouter = () => (
               <Route path="/" component={LandingPage} exact={true} />
               <Route path="/projects" component={ProjectsPage} />
               <Route path="/featured" component={FeaturedPage} />
+              <Route path="/stagg" component={FeaturedPage} />
               <Route path="/work" component={WorkPage} />
               <Route path="/contact" component={ContactMe} />
               <Route component={NotFoundPage} />

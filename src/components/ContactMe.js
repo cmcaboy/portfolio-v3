@@ -32,8 +32,8 @@ class ContactMe extends React.Component {
     }
 
     database
-      .ref("messages")
-      .set({
+      .ref("contact")
+      .push({
         name,
         email,
         message

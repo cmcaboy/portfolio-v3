@@ -15,6 +15,7 @@ const ProjectsPage = () => (
             </a>
           );
         }
+        return null;
       })}
     </div>
   </div>

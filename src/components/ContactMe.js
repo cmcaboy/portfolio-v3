@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "semantic-ui-react";
+import { database } from "../firebase/firebase";
 
 class ContactMe extends React.Component {
   constructor(props) {
@@ -8,18 +9,43 @@ class ContactMe extends React.Component {
     this.state = {
       name: "",
       email: "",
-      message: ""
+      message: "",
+      success: "",
+      error: ""
     };
   }
   onSubmit = event => {
+    console.log("state: ", this.state);
+    const { name, email, message } = this.state;
+    this.setState({ success: "", error: "" });
     event.preventDefault();
 
-    console.log("name: ", this.state.name);
-    console.log("email: ", this.state.email);
-    console.log("message: ", this.state.message);
+    if (!name) {
+      this.setState({ error: "Please specify a name!" });
+      return null;
+    } else if (!email) {
+      this.setState({ error: "Please specify an email!" });
+      return null;
+    } else if (!message) {
+      this.setState({ error: "Please specify a message!" });
+      return null;
+    }
+
+    database
+      .ref("messages")
+      .set({
+        name,
+        email,
+        message
+      })
+      .then(() => this.setState({ success: "Thank you!", error: "" }))
+      .catch(e =>
+        this.setState({ error: "Failed to send message!", success: "" })
+      );
   };
 
   render() {
+    const { success, error } = this.state;
     return (
       <div>
         <form onSubmit={this.onSubmit}>
@@ -51,6 +77,8 @@ class ContactMe extends React.Component {
             />
 
             <Button primary>Submit</Button>
+            {!!success && <p className="success">{success}</p>}
+            {!!error && <p className="error">{error}</p>}
           </div>
         </form>
       </div>

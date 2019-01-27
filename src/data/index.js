@@ -21,7 +21,7 @@ export const projects = [
   {
     label: "Stagg",
     category: "Business",
-    img: "images/stagg.jpg",
+    img: "images/stagg_pic.png",
     link: "stagg",
     type: "link",
     modalDisplay: false,

@@ -47,7 +47,13 @@ class ContactMe extends React.Component {
           message: ""
         })
       )
-      .catch(error => this.setState({ error, success: "" }));
+      .catch(error => {
+        console.log("error: ", error);
+        this.setState({
+          error: "Failed to send! Please try again later.",
+          success: ""
+        });
+      });
   };
 
   render() {

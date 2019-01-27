@@ -38,7 +38,15 @@ class ContactMe extends React.Component {
         email,
         message
       })
-      .then(() => this.setState({ success: "Thank you!", error: "" }))
+      .then(() =>
+        this.setState({
+          success: "Thank you!",
+          error: "",
+          name: "",
+          email: "",
+          message: ""
+        })
+      )
       .catch(e =>
         this.setState({ error: "Failed to send message!", success: "" })
       );
@@ -76,7 +84,9 @@ class ContactMe extends React.Component {
               value={this.state.message}
             />
 
-            <Button primary>Submit</Button>
+            <Button className="submit-button" primary>
+              Submit
+            </Button>
             {!!success && <p className="success">{success}</p>}
             {!!error && <p className="error">{error}</p>}
           </div>

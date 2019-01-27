@@ -4,11 +4,10 @@ node_js:
 cache:
   directories:
     - node_modules
-script: npm run build
+script: yarn run build
 deploy:
   provider: firebase
   skip_cleanup: true
-  project: ./build/
   token:
     secure: wTh/C0b5o/rgf5I69os1dP/K9DvbiRqO4E0g6hVpJtPspHgbEGUAlTcIhqAU/zuWM/GD4YezsSQORe/t9+Ves/W9NNcHAeW78CtvJk6RU/3jRc7NbHIW6xR4OC+34MpfyP3+tjhcXLAawtvGuRLUGQCwoq71wIkfS7sXTtFvcvn+hs72CmLsAlElAt9gmy7C7OnsGjxeqOOX/MsxnGEfor7lgIdaQFbhzJSqggePc7BgC1Lk8iC4+qbKub8mvRA6BRIwt4RyzZX9VZ5RURKNTQS/NSdvxDJjiMuhhw0+jyvuXryEmVEvIq/dExDbZmnIdhIJeMd/7w61sGIIgBZcgsNUYrwehf6s8ObQnapvsC4tvdz/ULs7OsWjzaROpgZfZPz48e5qDfNzgaVINZuwNrV6mwmeBmQfaYQxaO9FNOuxJAK7cF21n8dAcnHkoVk/dj4VOZ1/upGUTBeoYChw1xC6zNkG+6CDaW9VyfxKC6pZkybcXuGc/DWvklVUvsR9HqrdS6nlFrFvRW8KGjFjShl64TOXLvXWvl9oSzy0pmP69EYwPYwK+UgUxefS154YPmQAz0DUhE2t/l3jqi7y6BvO5tQqWYEoaEWI3lTvSbMSsxsvVGuIGgZPMAG3iWxCoOVrRAVi/kq7iL70VUvLPb22ha5UuMCeHvYQAfQx98A=
   message: portfolio deployed!

@@ -1,4 +1,13 @@
 export const projects = [
+{
+    label: "Boink",
+    category: "Development",
+    img: "https://firebasestorage.googleapis.com/v0/b/portfolio-mcaboy.appspot.com/o/boink_icon.png?alt=media&token=9d1d193a-8500-4927-bb19-34dc8cc984ff",
+    link: "https://date-review-web-bfx4n3s76.now.sh/",
+    type: "link",
+    modalDisplay: false,
+    visible: true
+  },
   {
     label: "Udemy Fastlane Course",
     category: "Development",
